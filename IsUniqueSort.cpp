@@ -1,5 +1,12 @@
 /*
-Optimized with native Sort function
+
+Optimized with native Sort function 
+
+Given an integer array nums, return true if any value appears at least twice in the array, 
+and return false if every element is distinct.
+
+O(n log n)
+
 */
 
 #include <iostream>
