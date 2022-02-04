@@ -32,7 +32,7 @@ bool containsDuplicate(vector<int> str)
 
 int main()
 {
-    bool result = containsDuplicate(1,2,3,4,4);
+    bool result = containsDuplicate({1,2,3,4,4});
     
     cout << result << endl;
     
