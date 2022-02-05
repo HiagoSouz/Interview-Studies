@@ -17,7 +17,7 @@ using namespace std;
 bool isPermutation(string str1,string str2)
 {
  
-    if(str1.length()==str2.length())
+    if(str1.length()==str2.length())  // the strings need be the same length in this case
     {
         sort(str1.begin(), str1.end());
         sort(str2.begin(), str2.end());
