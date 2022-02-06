@@ -1,3 +1,8 @@
+/* 
+Given a string, write a function to check if it`s a permutation of a palindrome.
+*/
+
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -18,10 +23,10 @@ string PalindromePermutation(string str){
             odd++;
  
         if (odd > 1)
-            return "NAO";
+            return "FALSE";
     }
  
-    return "SIM";
+    return "TRUE";
 }
 
 int main()
