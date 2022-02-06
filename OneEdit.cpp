@@ -20,36 +20,50 @@ using namespace std;
 
 bool OneAway(string s1, string s2){
     
-    int n1 = s1.length();
-    int n2 = s2.length();
-    int m;
-    int count = 0;
-    
-    if(n1>n2)
-        m = n1;
-    
-    else 
-        m = n2;
-     
-    if(n1!=n2){
-        
-        if(n1-n2 > 1 || n2-n1 > 1){
-            return false;
-        }
-        
-        
-    }
-    
-    for(int i=0;i<m;i++){
-        if(s1[i]!=s2[i])
+   // Find lengths of given strings
+    int m = s1.length(), n = s2.length();
+ 
+    // If difference between lengths is more than
+    // 1, then strings can't be at one distance
+    if (abs(m - n) > 1)
+        return false;
+ 
+    int count = 0; // Count of edits
+ 
+    int i = 0, j = 0;
+    while (i < m && j < n)
+    {
+        if (s1[i] != s2[j])
+        {
+            if (count == 1)
+                return false;
+ 
+
+            if (m > n)
+                i++;
+            else if (m< n)
+                j++;
+            else 
+            {
+                i++;
+                j++;
+            }
+             
             count++;
-            
-        if(count>1){
-            return false;
+        }
+ 
+        else
+        {
+            i++;
+            j++;
         }
     }
-    
-    return true;
+ 
+ 
+    if (i < m || j < n)
+        count++;
+ 
+    return count == 1;
     
 }
 
