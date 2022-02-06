@@ -62,7 +62,7 @@ bool OneAway(string s1, string s2){
     if (i < m || j < n)
         count++;
  
-    return true;
+    return count == 1;
     
 }
 
