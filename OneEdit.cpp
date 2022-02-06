@@ -20,13 +20,12 @@ using namespace std;
 
 bool OneAway(string s1, string s2){
     
-   // Find lengths of given strings
+   
     int m = s1.length(), n = s2.length();
  
-    // If difference between lengths is more than
-    // 1, then strings can't be at one distance
-    if (abs(m - n) > 1)
-        return false;
+     if(n1-n2 > 1 || n2-n1 > 1)
+            return false;
+     
  
     int count = 0; // Count of edits
  
