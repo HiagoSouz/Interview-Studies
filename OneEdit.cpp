@@ -1,3 +1,17 @@
+/* 
+
+Given two strings, write a function to check if they are one edit (or zero) away.
+
+EXAMPLES:
+
+pale, pls -> true
+pales, pale -> true
+pale, bake -> false
+o, o -> true
+aaa, a -> false
+
+*/
+
 #include <iostream>
 #include <string>
 #include <algorithm>
