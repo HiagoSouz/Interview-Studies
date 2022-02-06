@@ -1,33 +1,27 @@
-/* 
-Not finished
-*/
-
 #include <iostream>
 #include <string>
 #include <algorithm>
 
 using namespace std;
 
-string PalindromePermutation(string s){
+string PalindromePermutation(string str){
     
-    int n = s.length();
-    
-    cout << n << endl;
-    string c;
-    
-    for(int i=0;i<n;i++){
-        c = s[i];
-        
-    
-        string achou = find(s.begin(), s.end(), c);
-        if (it != s.end())
-            s.erase(achou);
-            
-        else 
-            s.push_back(c);
-            
+
+    int count[256] = { 0 };
+
+    for (int i = 0; str[i]; i++)
+        count[str[i]]++;
+ 
+    int odd = 0;
+    for (int i = 0; i < 256; i++) {
+        if (count[i] & 1)
+            odd++;
+ 
+        if (odd > 1)
+            return "NAO";
     }
-    return c;
+ 
+    return "SIM";
 }
 
 int main()
@@ -37,4 +31,3 @@ int main()
     cout << PalindromePermutation(s);
     return 0;
 }
-
