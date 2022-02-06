@@ -1,5 +1,9 @@
 /*
-Brute Force
+Brute Force solution: O(n²)
+
+Solution utilizing sort and complexity time O(n log n): 
+https://github.com/HiagoSouz/Interview-Studies/blob/main/IsUniqueSort.cpp
+
 */
 
 #include <iostream>
