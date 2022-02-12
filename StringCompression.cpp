@@ -1,3 +1,17 @@
+/* 
+
+
+Given a string, write a function to compress it by shortening every sequence of the same character to that character followed by the number of repetitions.
+ex:
+
+
+StringCompression(“a”) = "a1"
+StringCompression(“aaa”) = "a3"
+StringCompression(“aaabbb”) = "a3b3"
+StringCompression(“aaabccc”) = "a3b1c3"
+
+*/
+
 #include <iostream>
 #include <algorithm>
 
